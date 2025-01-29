@@ -7,7 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define U_MACRO_VA_ARGS(macro, ...) macro(__VA_ARGS__)
 #define U_STRINGIFY(x) #x
@@ -46,34 +46,14 @@ MIRYOKU_SHIFT_MACRO(u_bt_sel_2, &bt BT_SEL 2, &bt BT_SEL 2 &bt BT_CLR)
 MIRYOKU_SHIFT_MACRO(u_bt_sel_3, &bt BT_SEL 3, &bt BT_SEL 3 &bt BT_CLR)
 MIRYOKU_SHIFT_MACRO(u_bt_sel_4, &bt BT_SEL 4, &bt BT_SEL 4 &bt BT_CLR)
 
-/ { \
-  behaviors { \
-    bspc_del: bspc_del { \
-      compatible = "zmk,behavior-mod-morph"; \
-      label = "bspc_del"; \
-      #binding-cells = <0>; \
-      bindings = <&kp BSPC>, <&kp DEL>; \
-      mods = <(MOD_LSFT|MOD_RSFT)>; \
-    }; \
-  }; \
-  lt_bspc: layer_or_bspc_del { \
-      compatible = "zmk,behavior-hold-tap"; \
-      #binding-cells = <2>; \
-      tapping-term-ms = <200>; \
-      bindings = <&mo>, <&bspc_del>; \
-  }; \
-};
-
-
 #define BASE 0
-#define FUN 1
 #define NUM 1
 #define SYM 2
 #define NAV 3
 #define MEDIA 4
-#define QWERTY 5
-#define GAME 6
-#define GAME_ALT 7
+#define GAME 5
+#define GAME_ALT 6
+#define QWERTY 7
 
 &mt {
     flavor = "tap-preferred";
@@ -131,21 +111,11 @@ MIRYOKU_SHIFT_MACRO(u_bt_sel_4, &bt BT_SEL 4, &bt BT_SEL 4 &bt BT_CLR)
                               &kp none     &kp C_VOL_UP  &kp none     &kp none               &none            &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT
       &none      &kp none     &kp C_PREV   &kp C_VOL_DN  &kp C_NEXT   &kp none               &none            &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP  &msc SCRL_DOWN
                  &u_bt_sel_0  &u_bt_sel_1  &u_bt_sel_2   &u_bt_sel_3  &u_bt_sel_4            &none            &mkp MB1        &mkp MB2        &mkp MB3         &none
-                                            &kp C_MUTE   &kp C_PP  &kp C_STOP      &trans         &trans        &trans
+                                            &kp C_MUTE   &kp C_PP  &kp C_STOP           &trans         &trans        &trans
             >;
         };
 
-// QWERTY 5
-        QWERTY_layer {
-            bindings = <
-                            &kp W       &kp E        &kp R        &kp T            &kp Y     &kp U        &kp I        &kp O
-          &kp Q &kp A       &mt LGUI S  &mt LALT D   &mt LCTRL F  &kp G            &kp H     &mt RCTRL J  &mt RALT K   &mt RGUI L  &kp SEMI  &kp P
-                &kp Z       &kp X       &kp C        &kp V        &kp B            &kp N     &kp M        &kp COMMA    &kp DOT     &kp FSLH
-                                          &kp DEL    &kp BSPC    &mt LSHFT RET   &kp TAB    &kp SPACE  &to BASE
-            >;
-        };
-
-// GAME 6
+// GAME 5
         GAME_layer {
             bindings = <
                              &kp Q       &kp W       &kp E     &kp R                    &kp N7            &kp N8       &kp N9       &to QWERTY
@@ -155,13 +125,23 @@ MIRYOKU_SHIFT_MACRO(u_bt_sel_4, &bt BT_SEL 4, &bt BT_SEL 4 &bt BT_CLR)
             >;
         };
 
-// GAME_ALT
+// GAME_ALT 6
         GAME_ALT_Layer {
             bindings = <
-                             &kp N1      &kp N2      &kp N3    &kp I                &trans             &trans       &trans       &trans
-      &trans     &kp G       &kp N4      &kp N5      &kp N6    &kp J                &trans             &trans       &trans       &trans     &trans &trans
+                             &kp N4      &kp N5      &kp N6    &kp I                &trans             &trans       &trans       &trans
+      &trans     &kp G       &kp N1      &kp N2      &kp N3    &kp J                &trans             &trans       &trans       &trans     &trans  &trans
                  &kp B       &kp N7      &kp N8      &kp N9    &kp M                &trans             &trans       &trans       &trans     &trans
                                             &trans     &trans    &trans        &trans         &trans        &trans
+            >;
+        };
+
+// QWERTY 7
+        QWERTY_layer {
+            bindings = <
+                            &kp W       &kp E        &kp R        &kp T            &kp Y     &kp U        &kp I        &kp O
+          &kp Q &kp A       &mt LGUI S  &mt LALT D   &mt LCTRL F  &kp G            &kp H     &mt RCTRL J  &mt RALT K   &mt RGUI L  &kp SEMI  &kp P
+                &kp Z       &kp X       &kp C        &kp V        &kp B            &kp N     &kp M        &kp COMMA    &kp DOT     &kp FSLH
+                                          &kp DEL    &kp BSPC    &mt LSHFT RET   &kp TAB    &kp SPACE  &to BASE
             >;
         };
     };
