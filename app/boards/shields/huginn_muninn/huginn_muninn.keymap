@@ -98,20 +98,20 @@ MIRYOKU_SHIFT_MACRO(u_bt_sel_4, &bt BT_SEL 4, &bt BT_SEL 4 &bt BT_CLR)
 // NAV 3
         NAV_layer {
             bindings = <
-                             &kp HOME    &kp UP      &kp END     &kp INS            &kp PSCRN        &kp F7      &kp F8       &kp F9
-      &kp PG_UP  &kp PG_DN   &kp LEFT    &kp DOWN    &kp RIGHT   &kp CAPS           &kp SLCK         &kp F4      &kp F5       &kp F6      &kp F11  &kp F12
-                 &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &kp LC(Y)          &kp PAUSE_BREAK  &kp F1      &kp F2       &kp F3      &kp F10
-                                     &mt LALT DEL  &mt LCTRL BSPC  &trans        &mt RGUI TAB   &trans        &trans
+                             &kp HOME    &kp UP      &kp END     &kp INS            &kp PSCRN        &kp F7        &kp F8       &kp F9
+      &kp PG_UP  &kp PG_DN   &kp LEFT    &kp DOWN    &kp RIGHT   &kp CAPS           &kp SLCK         &mt RCTRL F4  &mt RALT F5  &mt RGUI F6  &kp F11  &kp F12
+                 &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &kp LC(Y)          &kp PAUSE_BREAK  &kp F1        &kp F2       &kp F3       &kp F10
+                                             &trans     &trans      &trans        &trans        &trans        &trans
             >;
         };
 
 // MEDIA 4
         MEDIA_layer {
             bindings = <
-                              &kp none     &kp C_VOL_UP  &kp none     &kp none               &none            &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT
-      &none      &kp none     &kp C_PREV   &kp C_VOL_DN  &kp C_NEXT   &kp none               &none            &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP  &msc SCRL_DOWN
-                 &u_bt_sel_0  &u_bt_sel_1  &u_bt_sel_2   &u_bt_sel_3  &u_bt_sel_4            &none            &mkp MB1        &mkp MB2        &mkp MB3         &none
-                                            &kp C_MUTE   &kp C_PP  &kp C_STOP           &trans         &trans        &trans
+                              &kp none         &kp C_VOL_UP       &kp none           &kp none               &none            &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT
+      &none      &kp none     &mt LGUI C_PREV  &mt LALT C_VOL_DN  &mt LCTRL C_NEXT   &kp none               &none            &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP  &msc SCRL_DOWN
+                 &u_bt_sel_0  &u_bt_sel_1      &u_bt_sel_2        &u_bt_sel_3        &u_bt_sel_4            &none            &mkp MB1        &mkp MB2        &mkp MB3         &none
+                                                           &kp C_MUTE   &kp C_PP  &kp C_STOP              &trans         &trans        &trans
             >;
         };
 
