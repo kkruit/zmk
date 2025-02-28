@@ -68,7 +68,7 @@ MIRYOKU_SHIFT_MACRO(u_bt_sel_4, &bt BT_SEL 4, &bt BT_SEL 4 &bt BT_CLR)
                             &kp W       &kp F        &kp P        &kp B            &kp J     &kp L        &kp U        &kp Y
           &kp Q &kp A       &kp R       &kp S        &kp T        &kp G            &kp M     &kp N        &kp E        &kp I       &kp O  &kp SQT
                 &kp Z       &kp X       &kp C        &kp D        &kp V            &kp K     &kp H        &kp COMMA    &kp DOT     &kp FSLH
-                                  &lt MODS DEL   &lt NUM BSPC  &lt SYM TAB     &lt MEDIA RET   &lt NAV SPACE  &lt MODS ESC 
+                                  &sl MODS       &lt NUM BSPC  &lt SYM TAB     &lt MEDIA RET   &lt NAV SPACE  &sl MODS
             >;
         };
 
