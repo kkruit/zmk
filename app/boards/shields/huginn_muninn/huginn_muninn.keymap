@@ -74,7 +74,7 @@ MIRYOKU_SHIFT_MACRO(u_bt_sel_4, &bt BT_SEL 4, &bt BT_SEL 4 &bt BT_CLR)
         };
 
 // LMODS 1
-        MODS_layer {
+        LMODS_layer {
             bindings = <
                              &trans      &trans       &trans       &trans           &trans    &trans       &trans       &trans
       &trans     &sk LGUI    &sk LALT    &sk LCTRL    &sk LSHFT    &trans           &trans    &trans       &trans       &trans      &trans      &trans
@@ -84,7 +84,7 @@ MIRYOKU_SHIFT_MACRO(u_bt_sel_4, &bt BT_SEL 4, &bt BT_SEL 4 &bt BT_CLR)
         };
 
 // RMODS 2
-        MODS_layer {
+        RMODS_layer {
             bindings = <
                              &trans      &trans       &trans       &trans           &trans    &trans       &trans       &trans
       &trans     &trans      &trans      &trans       &trans       &trans           &trans    &sk RSHFT    &sk RCTRL    &sk RALT    &sk RGUI    &trans
