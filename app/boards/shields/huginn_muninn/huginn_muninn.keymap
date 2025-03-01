@@ -79,7 +79,7 @@ MIRYOKU_SHIFT_MACRO(u_bt_sel_4, &bt BT_SEL 4, &bt BT_SEL 4 &bt BT_CLR)
                              &trans      &trans       &trans       &trans           &trans    &trans       &trans       &trans
       &trans     &sk LGUI    &sk LALT    &sk LCTRL    &sk LSHFT    &trans           &trans    &trans       &trans       &trans      &trans      &trans
                  &trans      &trans      &trans       &trans       &trans           &trans    &trans       &trans       &trans      &trans
-                                                &kp DEL   &trans      &trans     &trans     &trans   &kp ESC
+                                                &kp DEL   &kp BSPC   &kp RET     &kp TAB    &kp SPACE  &kp ESC
             >;
         };
 
@@ -89,7 +89,7 @@ MIRYOKU_SHIFT_MACRO(u_bt_sel_4, &bt BT_SEL 4, &bt BT_SEL 4 &bt BT_CLR)
                              &trans      &trans       &trans       &trans           &trans    &trans       &trans       &trans
       &trans     &trans      &trans      &trans       &trans       &trans           &trans    &sk RSHFT    &sk RCTRL    &sk RALT    &sk RGUI    &trans
                  &trans      &trans      &trans       &trans       &trans           &trans    &trans       &trans       &trans      &trans
-                                                &kp DEL   &trans      &trans     &trans     &trans   &kp ESC
+                                                &kp DEL   &kp BSPC   &kp RET     &kp TAB    &kp SPACE  &kp ESC
             >;
         };
 
