@@ -76,20 +76,20 @@ MIRYOKU_SHIFT_MACRO(u_bt_sel_4, &bt BT_SEL 4, &bt BT_SEL 4 &bt BT_CLR)
 // LMODS 1
         LMODS_layer {
             bindings = <
-                             &RS(W)      &RS(F)       &RS(P)              &RS(B)           &LS(J)    &LS(L)       &LS(U)       &LS(Y)
-      &RS(Q)     &sk LGUI    &sk LALT    &sk LCTRL    &mt LSHFT &RS(T)    &RS(G)           &LS(M)    &LS(N)       &LS(E)       &LS(I)      &LS(O)      &kp DQT
-                 &RS(Z)      &RS(X)      &RS(C)       &RS(D)              &RS(V)           &LS(K)    &LS(H)       &kp LT       &kp GT      &kp QMARK
-                                                       &kp DEL   &kp BSPC   &kp RET     &kp TAB    &kp SPACE  &kp ESC
+                                &kp RS(W)      &kp RS(F)       &kp RS(P)       &kp RS(B)           &kp LS(J)   &kp LS(L)   &kp LS(U)   &kp LS(Y)
+      &kp RS(Q)  &mt LGUI RS(A) &mt LALT RS(R) &mt LCTRL RS(S) &mt LSHFT RS(T) &kp RS(G)           &kp LS(M)   &kp LS(N)   &kp LS(E)   &kp LS(I)   &kp LS(O)   &kp DQT
+                 &kp RS(Z)      &kp RS(X)      &kp RS(C)       &kp RS(D)       &kp RS(V)           &kp LS(K)   &kp LS(H)   &kp LT      &kp GT      &kp QMARK
+                                                               &kp DEL   &kp BSPC   &kp RET     &kp TAB    &kp SPACE  &kp ESC
             >;
         };
 
 // RMODS 2
         RMODS_layer {
             bindings = <
-                             &RS(W)      &RS(F)       &RS(P)       &RS(B)           &LS(J)    &LS(L)               &LS(U)       &LS(Y)
-      &RS(Q)     &RS(A)      &RS(R)      &RS(S)       &RS(T)       &RS(G)           &LS(M)    &mt RSHFT &LS(N)     &sk RCTRL    &sk RALT    &sk RGUI    &LS()
-                 &RS(Z)      &RS(X)      &RS(C)       &RS(D)       &RS(V)           &LS(K)    &LS(H)               &kp LT       &kp GT      &kp QMARK
-                                                &kp DEL   &kp BSPC   &kp RET     &kp TAB    &kp SPACE  &kp ESC
+                             &kp RS(W)   &kp RS(F)   &kp RS(P)   &kp RS(B)           &kp LS(J)   &kp LS(L)       &kp LS(U)       &kp LS(Y)
+      &kp RS(Q)  &kp RS(A)   &kp RS(R)   &kp RS(S)   &kp RS(T)   &kp RS(G)           &kp LS(M)   &mt RSHFT LS(N) &mt RCTRL LS(E) &mt RALT LS(I) &mt RGUI LS(O)  &kp DQT
+                 &kp RS(Z)   &kp RS(X)   &kp RS(C)   &kp RS(D)   &kp RS(V)           &kp LS(K)   &kp LS(H)       &kp LT          &kp GT         &kp QMARK
+                                                 &kp DEL   &kp BSPC   &kp RET     &kp TAB    &kp SPACE  &kp ESC
             >;
         };
 
