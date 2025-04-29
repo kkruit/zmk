@@ -76,19 +76,19 @@ MIRYOKU_SHIFT_MACRO(u_bt_sel_4, &bt BT_SEL 4, &bt BT_SEL 4 &bt BT_CLR)
 // LMODS 1
         LMODS_layer {
             bindings = <
-                             &trans      &trans       &trans       &trans           &trans    &trans       &trans       &trans
-      &trans     &sk LGUI    &sk LALT    &sk LCTRL    &sk LSHFT    &trans           &trans    &trans       &trans       &trans      &trans      &trans
-                 &trans      &trans      &trans       &trans       &trans           &trans    &trans       &trans       &trans      &trans
-                                                &kp DEL   &kp BSPC   &kp RET     &kp TAB    &kp SPACE  &kp ESC
+                             &RS(W)      &RS(F)       &RS(P)              &RS(B)           &LS(J)    &LS(L)       &LS(U)       &LS(Y)
+      &RS(Q)     &sk LGUI    &sk LALT    &sk LCTRL    &mt LSHFT &RS(T)    &RS(G)           &LS(M)    &LS(N)       &LS(E)       &LS(I)      &LS(O)      &kp DQT
+                 &RS(Z)      &RS(X)      &RS(C)       &RS(D)              &RS(V)           &LS(K)    &LS(H)       &kp LT       &kp GT      &kp QMARK
+                                                       &kp DEL   &kp BSPC   &kp RET     &kp TAB    &kp SPACE  &kp ESC
             >;
         };
 
 // RMODS 2
         RMODS_layer {
             bindings = <
-                             &trans      &trans       &trans       &trans           &trans    &trans       &trans       &trans
-      &trans     &trans      &trans      &trans       &trans       &trans           &trans    &sk RSHFT    &sk RCTRL    &sk RALT    &sk RGUI    &trans
-                 &trans      &trans      &trans       &trans       &trans           &trans    &trans       &trans       &trans      &trans
+                             &RS(W)      &RS(F)       &RS(P)       &RS(B)           &LS(J)    &LS(L)               &LS(U)       &LS(Y)
+      &RS(Q)     &RS(A)      &RS(R)      &RS(S)       &RS(T)       &RS(G)           &LS(M)    &mt RSHFT &LS(N)     &sk RCTRL    &sk RALT    &sk RGUI    &LS()
+                 &RS(Z)      &RS(X)      &RS(C)       &RS(D)       &RS(V)           &LS(K)    &LS(H)               &kp LT       &kp GT      &kp QMARK
                                                 &kp DEL   &kp BSPC   &kp RET     &kp TAB    &kp SPACE  &kp ESC
             >;
         };
